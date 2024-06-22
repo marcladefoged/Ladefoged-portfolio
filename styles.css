@@ -202,5 +202,117 @@ img {
     margin-bottom: 1rem;
 }
 
-/* https://www.youtube.com/watch?v=LLzWSIIjMdQ */
-/* part 2: https://www.youtube.com/watch?v=CZ26zhDemE8 */
+.title span {
+    font-weight: 700;
+}
+
+.subtitle {
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.description {
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    width: 85%;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons a {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: black;
+    padding: .8rem 1.6rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: .3s ease-out;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    background: var(--heading-color);
+    color: white;
+}
+
+.buttons a:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Projects section */
+.projects-section {
+    margin-top: 80px;
+}
+
+.projects-section .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    max-width: 1000px;
+    width: 80%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+.project-card {
+    background: #0d0d0d;
+    border-radius: 1rem;
+    max-width: 450px;
+    width: 500px;
+}
+
+.project-image-container {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    transition: .2s ease-in-out;
+}
+
+.project-image:hover {
+    transform: scale(1.05)
+}
+
+.project-content {
+    border-radius: 0 0 10px 10px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3rem;
+
+}
+
+.project-content > p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
+
+.check-project {
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* Projects section ends */
