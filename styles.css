@@ -22,6 +22,17 @@ body {
     color: var(--text-color);
 }
 
+.background-fade img {
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: grayscale(1);
+    opacity: .1;
+    
+}
 
 /* Hero Section */
 
@@ -250,7 +261,7 @@ img {
 
 /* Projects section */
 .projects-section {
-    margin-top: 80px;
+    margin: 80px 0;
 }
 
 .projects-section .wrapper {
@@ -326,5 +337,76 @@ img {
     color: var(--heading-color);
 }
 
-
 /* Projects section ends */
+
+/* Contact section */
+
+.contact {
+    position: relative;
+    display: flex;
+    font-size: 2em;
+    min-height: 100vh;
+    padding-block: 2rem;;
+}
+
+.contact .container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+.contact .wrapper {
+    font-size: 30px;
+}
+
+.contact .wrapper .grp {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact .grp:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.contact .grp {
+    font-size: 40px;
+    margin-right: 1rem;
+}
+
+
+/* Contact section ends */
+
+.back-top {
+    text-decoration: none;
+    font-size: 20px;
+    color: #eee;
+    background: var(--heading-color);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+    transition: .4s ease-out;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.back-top:hover {
+    transform: translateY(-20px);
+}
+
+.back-top:active {
+    opacity: 1;
+    pointer-events: auto;
+}
