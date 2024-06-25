@@ -1,10 +1,17 @@
-const toTop = document.querySelector(".back-top");
+const scrollToTop = document.querySelector(".back-top");
 
-window.addEventListener("scroll", () => {
+window.addEventListener('scroll', () => {
     if (window.scrollY > 75) {
-        toTop.classList.add("active");
+        scrollToTop.style.display = 'block';
     } else {
-        toTop.classList.remove("active");
+        scrollToTop.style.display = 'none';
     }
 });
+
+scrollToTop.addEventListener('click', () => {
+    document.body.scrollIntoView({ behavior: 'smooth' });
+});
+
+
+
 
