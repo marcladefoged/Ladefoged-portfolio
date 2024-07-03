@@ -411,3 +411,123 @@ img {
     opacity: 1;
     pointer-events: auto;
 }
+
+
+/* Responsiveness */
+
+@media only screen and (max-width: 1100px){
+    .s-container, header nav {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    #btn {
+        display: block;
+    }
+
+    header ul {
+        position: absolute;
+        right: 5vh;
+        top: 15vh;
+        width: 300px;
+        min-height: 500px;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        background: #0000007f;
+        backdrop-filter: blur(5px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    header ul.show {
+        display: flex;
+    }
+
+    .s-container {
+        width: 90%;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding-block: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .content {
+        width: 90%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .desc {
+        width: 100%;
+    }
+
+    .buttons {
+        margin: 1rem auto;
+    }
+
+    .image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .image img {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .header h1 {
+     font-size: 35px !important;
+     margin-top: .7rem;
+    }
+
+    .contact .header h3 {
+        font-size: 20px;
+        margin-bottom: -.5rem;
+    }
+
+    .contact .grp i, .contact .grp span {
+        font-size: 25px;
+    }
+
+    .footer p {
+        font-size: 27px !important;
+    }
+
+    .footer a {
+        font-size: 15px !important;
+        padding: -.7rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header ul {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 2.3rem;
+    }
+
+    .contact .grp i {
+        margin-right: 0 !important;
+    }
+
+}

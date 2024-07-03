@@ -1,3 +1,9 @@
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", () => {
+    document.querySelector("header ul").classList.toggle("show");
+});
+
 const scrollToTop = document.querySelector(".back-top");
 
 window.addEventListener('scroll', () => {
