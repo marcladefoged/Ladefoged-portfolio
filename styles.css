@@ -163,7 +163,7 @@ header ul li:nth-child(1) a {
     color: var(--heading-color);
     font-weight: 600;
     text-align: center;
-    margin-bottom: -1rem;
+    margin-top: 5rem;
 }
 
 .header h1 {
@@ -468,7 +468,7 @@ img {
 .card h1 {
     text-align: center;
     font-size: 40px;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
     color: var(--text-color);
     transition: .4s ease-in-out;
 }
@@ -596,7 +596,7 @@ img {
 
     .project-desc p {
         display: none;
-        
+
     }
 
     .contact .header h3 {
@@ -654,9 +654,13 @@ img {
 
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
     body {
-        width: 100%;
+        width: 400px;
+    }
+
+    .background-fade img {
+        display: none;
     }
 
 }
