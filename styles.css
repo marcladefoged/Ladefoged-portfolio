@@ -513,6 +513,11 @@ header ul li:nth-child(1) a {
         gap: 1rem;
     }
 
+    .image img {
+        width: 500px;
+        height: 500px;
+    }
+
     
 }
 
