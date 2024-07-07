@@ -21,9 +21,13 @@ body {
     background-color: var(--bg-secondary);
     color: var(--text-color);
     min-height: 100%; 
-    min-width: 100%;
+    width: 100%;
     background-image: linear-gradient(to right, rgba(204, 0, 187, 0.15) 0%, rgba(0, 70, 209, 0.15) 100%);   
 } 
+
+/* .background-fade {
+    
+} */
 
 
 .background-fade img {
@@ -495,6 +499,10 @@ img {
     color: var(--text-color);
 }
 
+.skill:hover {
+    transform: scale(1.05)
+}
+
 
 /* Responsiveness */
 
@@ -523,7 +531,10 @@ img {
 }
 
 @media only screen and (max-width: 950px){
+
+
     #btn {
+        margin-left: 2rem;
         display: block;
     }
 
@@ -548,7 +559,7 @@ img {
     }
 
     .s-container {
-        width: 90%;
+        /* width: 90%; */
         flex-direction: column-reverse;
         gap: 1rem;
         padding-block: 3rem;
@@ -556,7 +567,7 @@ img {
     }
 
     .content {
-        width: 90%;
+        /* width: 90%; */
         text-align: center;
     }
 
@@ -587,6 +598,10 @@ img {
 
     body {
         width: 100%;
+    }
+
+    .background-fade img {
+        display: none;
     }
 
     .header h1 {
@@ -622,6 +637,7 @@ img {
 
     body {
         width: 100%;
+        margin: 0 auto;
     }
 
     header ul {
@@ -646,6 +662,10 @@ img {
         margin-right: 0 !important;
     }
 
+    .contact .grp span {
+        font-size: 20px;
+    }
+
     .card {
         background: transparent;
         backdrop-filter: blur(0px);
@@ -657,10 +677,6 @@ img {
 @media only screen and (max-width: 375px) {
     body {
         width: 400px;
-    }
-
-    .background-fade img {
-        display: none;
     }
 
 }
