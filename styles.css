@@ -581,8 +581,9 @@ header ul li:nth-child(1) a {
         font-size: 2.5rem;
     }
 
-    .desc {
+    .description {
         width: 100%;
+        font-size: 20px;
     }
 
     .buttons {
