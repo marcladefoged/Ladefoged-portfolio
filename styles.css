@@ -645,13 +645,12 @@ header ul li:nth-child(1) a {
 
 @media only screen and (max-width: 524px) {
 
-    body {
-        width: 100%;
-        /* margin: 0 auto; */
-    }
-
     header h1 {
         font-size: 30px;
+    }
+
+    header nav {
+        margin: 0 5px;
     }
 
     header ul {
@@ -660,6 +659,9 @@ header ul li:nth-child(1) a {
         transform: translateX(-50%);
     }
 
+    .project-content h3 {
+        font-size: 12px;
+    }
     
 
     .icons {
