@@ -659,6 +659,16 @@ header ul li:nth-child(1) a {
         transform: translateX(-50%);
     }
 
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .buttons a {
+        padding: 1.5rem 2.5rem;
+    }
+
     .project-content h3 {
         font-size: 12px;
     }
