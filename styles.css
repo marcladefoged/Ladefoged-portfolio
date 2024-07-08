@@ -650,7 +650,8 @@ header ul li:nth-child(1) a {
     }
 
     header nav {
-        margin: 0 20px;
+        width: 80%;
+        margin: 0 2rem;
     }
 
     header ul {
@@ -707,9 +708,14 @@ header ul li:nth-child(1) a {
 
 }
 
-/* @media only screen and (max-width: 375px) {
-    body {
-        width: 100%;
+@media only screen and (max-width: 375px) {
+
+    header h1 {
+        font-size: 25px;
     }
 
-} */
+    .s-container {
+        min-height: 40vh;
+    }
+
+}
