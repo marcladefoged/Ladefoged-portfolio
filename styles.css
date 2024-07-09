@@ -68,6 +68,10 @@ header ul {
     gap: 5rem;
 }
 
+header ul li {
+    font-weight: 600;
+}
+
 header a {
     display: block;
     color: var(--text-color);
