@@ -107,6 +107,18 @@ header ul li:nth-child(1) a {
     color: var(--text-color);
 }
 
+.globe {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.globe img {
+    width: 30px;
+}
+
 #btn {
     all: unset;
     cursor: pointer;
@@ -210,6 +222,7 @@ header ul li:nth-child(1) a {
     height: 600px;
     border-radius: 50%;
     object-fit: cover;
+    
 }
 
 .content {
@@ -313,7 +326,7 @@ header ul li:nth-child(1) a {
 
 .project-image {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     height: 100%;
     transition: .2s ease-in-out;
